@@ -8,7 +8,7 @@
 result = (b==c) # True 
 result = (a==c) # False
 
-username = 'ahmetcavdar'
+username = 'ahmetcavcav'
 password = '3253'
 
 result = ('ahmtcvdr' == username) # False

@@ -20,9 +20,9 @@ except ValueError:
 #2- kullanicidan 2 vize(60%) ve final(40%) notunu alip ortalama hesaplayin 
 #   eger ortalama 50 ve uzeriyse 'gecti', kaldiysa 'kaldi' yazdirin.
 
-vize1 = input('vize1 notunu girin: '.title())
-vize2 = input('vize2 notunu girin: '.title())
-final = input('final notunu girin: ')
+vize1 = input('Entry first midterm score: '.title())
+vize2 = input('Entry second midterm score: '.title())
+final = input('Entry final score: ')
 
 try :
      totalPuan = (float(vize1) * 0.3) + (float(vize2) * 0.3) + (float(final) * 0.4)

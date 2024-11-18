@@ -32,9 +32,7 @@ except ValueError:
 
 # 3- email ve parola bilgileri ile giris kontrolu yapin 
 
-print('Maras Disindaki Maraslilari Yasatma, Okutma ve Koruma Dernegi Sistemi')
-
-username = 'ahmetcavdar'   
+username = 'ahmetcvdr'   
 password = 'a3253'
 
 girilenUsername = input('Kullanici adi: ')

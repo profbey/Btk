@@ -22,7 +22,7 @@ nlist = list1 + list2
 print(nlist)
 print(len(nlist))
 
-userA = ['sadik', 36]
+userA = ['guren', 36]
 userB = ['mustafa', 24]
 
 userTotal = [userA, userB]
