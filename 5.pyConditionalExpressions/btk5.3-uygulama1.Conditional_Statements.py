@@ -1,4 +1,4 @@
-'''
+
 # 1- Kullanicidan isim, soyisim, yas, egitim bilgisi alinacak.   
 #    Kosullar: 18+ yas egitim durumu lise veya universite mezunu olmali
 
@@ -56,7 +56,7 @@ while True:
      except ValueError:
           print('Enter your data again!')
      
-'''
+
 
 
 
@@ -66,34 +66,31 @@ while True:
 #    3. bakim = 3. yil 
 #    ** Sure hesabini alinan gun, ay, yil bilgisine gire gun bazli hesaplayiniz.
 #    *** datetime modulunu kullanmaniz gerekiyor.
-#    (simdi) - (2018/8/1) = gun
+#    (simdi) - (2022/3/2) = gun
 
 import datetime
-
-
+ 
 while True:
      try:
-          days = int(input('How Many Days Has The Vehicle Been In Traffic?'))
+          date = input("What's The Date Of The Vehicle Been In Traffic? (2022/3/2) :")
+          date = date.split('/')
 
-          if   0         <= days <= 365:
-               print(f'It is on the first maintenance year with {days} days.')
-          elif 365       <  days <= (365 *2):
-               print(f'It is on the second maintenance year with {days} days.')
-          elif (365 *2)  <  days <= (365 *3):
-               print(f'It is on the third maintenance year with {days} days.')
+          trafficTime = datetime.datetime(int(date[0]), int(date[1]), int(date[2]))
+          timeNow = datetime.datetime.now()
+
+          difTime = (timeNow - trafficTime)
+          difTime.days
+          
+          if   0         <= difTime.days <= 365:
+               print(f'It is on the first maintenance year with {difTime.days} days.')
+          elif 365       <  difTime.days <= (365 *2):
+               print(f'It is on the second maintenance year with {difTime.days} days.')
+          elif (365 *2)  <  difTime.days <= (365 *3):
+               print(f'It is on the third maintenance year with {difTime.days} days.')
+          else:
+               print(f'It is on the fourth maintenance term with {difTime.days} days.')
           break
      
      except ValueError:
           print('Pls entry available numbers')
-
-
-
-
-
-
-
-
-
-
-
 
