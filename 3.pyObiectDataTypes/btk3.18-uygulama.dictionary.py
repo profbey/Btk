@@ -1,13 +1,13 @@
 '''
 students = {
      '120' : {
-          'name'    : 'mehmet',
+          'name'    : 'muhammed',
           'surname' : 'kahveci',
           'phone'   : '5445447756'
      },
      '121': {
           'name'    : 'ahmet',
-          'surname' : 'cavdar',
+          'surname' : 'gozupek',
           'phone'   : '5345663142'
      },
      '122': {
