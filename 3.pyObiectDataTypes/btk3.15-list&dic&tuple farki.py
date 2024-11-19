@@ -38,23 +38,3 @@ Ornek Kullanim Alanlari
         Sozluk anahtari: person = {("ad", "soyad"): ("Ali", "Veli")}
 """
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
