@@ -36,17 +36,3 @@ result5 = not (x > 0 )                  # False => True
 print(f'result 5 degeri = {result5}')   # True  => False
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
