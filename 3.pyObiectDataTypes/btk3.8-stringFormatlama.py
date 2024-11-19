@@ -20,4 +20,3 @@ print(f"My name is {name} {surname} and i am {age} years old.")
 # formatlama ile ayni sey sadece .format(name) yerine {name} icerisine dogrudan yazabiliriz.
 
 
-
