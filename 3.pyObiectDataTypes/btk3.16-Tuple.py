@@ -13,25 +13,3 @@ list[0] = 15 # yapilabilir ancak
 n_tuple = ()
 n_tuple = tuple + (1,4,5,)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
