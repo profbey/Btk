@@ -14,3 +14,5 @@ while not name.strip():
         name = input('Name?: ')
 print(f'Wellcome, {name.title()}.')
 
+# 'while True:' seklinde calisir.
+        
