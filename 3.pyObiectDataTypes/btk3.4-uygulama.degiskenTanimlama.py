@@ -11,11 +11,11 @@
  musteri yasi
 
 """
-customerName = "Adnan"
-customerSurname = "Kahveci"
+customerName = "murat"
+customerSurname = "Gogebakan"
 customerTotalName = customerName + " " + customerSurname
-customerSex = True #True = "Erkek"//Bu ifade 2 cesit olabilecegini dusundugu icin kullandi. 
-customerID = 22442020524
+customerSex = True      #True = "Erkek"//Bu ifade 2 cesit olabilecegini dusundugu icin kullandi. 
+customerID = 224421020524
 customerDate = 1997
 customerOld = 2024 - customerDate
 customerLoc = "Dikimevi, Ankara"
