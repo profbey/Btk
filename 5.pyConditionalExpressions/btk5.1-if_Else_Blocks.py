@@ -6,7 +6,7 @@ if isLoggedin:
 '''
 
 
-username = 'ahmetcavdar'   
+username = 'ahmetuzum'   
 password = 'a3253'
 
 girilenUsername = input('Kullanici adi: ')
