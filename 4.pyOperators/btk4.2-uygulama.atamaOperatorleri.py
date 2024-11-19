@@ -43,34 +43,3 @@ print(a)
 toplam_y = y[a-1] +y[a-3] +y[a-2]  # daha otomatik yapmak icin for x in range(a) 
                                    # fonksiyonu ile yapacagiz muhtemelen.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
