@@ -39,10 +39,3 @@ print(f'\n*final* letters: {letters} \nlen = {len_letters}, \nmax val_l: {val_l}
 
 
  
-
-
-
-
-
-
-
