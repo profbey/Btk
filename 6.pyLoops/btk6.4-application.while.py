@@ -1,6 +1,12 @@
-numbers = [6,46,33,34,54,67,78,98,49]
+numbers = [6,46,33,34,54,7,78,9,49]
 
-# 1- numbers listesini while ile ekrana yazdirin 
+# 1- numbers listesini while ile ekrana yazdirin
+
+i = 0 
+
+while (i < len(numbers)):
+        print(numbers[i])
+        i += 1
 
 # 2- baslangc v bitis degerlerini kullanicidan alip aradaki tum tek sayilari yazdirin 
 
