@@ -13,7 +13,7 @@ alan = pi * (r ** 2)
 cevre = 2 * pi * r 
 
 print(f'Ucgenin Alani: {alan}, \nUcgenin Cevresi: {cevre}')
-
+print('*** ' *10)
 
 
 
@@ -28,6 +28,7 @@ Alan = √(s(s-a)(s-b)(s-c)) formuluyle hesaplanir.
 
 """
 
+print('Method for calculating the area of ​​a triangle with only known sides')
 
 from math import sqrt
 
@@ -48,5 +49,5 @@ while True:
                         break
         except ValueError:
                 print('It is not a triangle. Try again!')
-
+print('*** ' *10)
         
