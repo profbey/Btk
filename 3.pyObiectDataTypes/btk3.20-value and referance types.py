@@ -23,15 +23,3 @@ b[0] = 'grape'      # sifirinci index 'grape' il degistirildi.
 print(a,b)          # output: ['grape', 'banana'] ['grape', 'banana']
                     # output value type gibi degismek yerine b'de yapilan degisiklik dogrudan a'yi etkiledi.
 
-
-
-
-
-
-
-
-
-
-
-
-
