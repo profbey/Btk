@@ -22,6 +22,3 @@ print(greating[2:40:2])     # ucuncu karakterden kirkbirinci karaktere kadar iki
 
 
 
-
-
-
