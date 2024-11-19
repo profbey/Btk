@@ -26,17 +26,27 @@ ucgenin cevre uzunluğunun yarisi olmak uzere;
 
 Alan = √(s(s-a)(s-b)(s-c)) formuluyle hesaplanir.
 
-* BUNA UCGEN OLABILME KURALI EKLENMELI. KONTROL ETTIKTEN SONRA BU FORMULU UYGULAMALI 
-
 """
+
+
 from math import sqrt
 
-a = float(input("birinci kenar: "))
-b = float(input("ikinci kenar: "))
-c = float(input("ucuncu kenar: "))
+while True:
+        try:
+                a = float(input("birinci kenar: "))
+                b = float(input("ikinci kenar: "))
+                c = float(input("ucuncu kenar: "))
 
-s = (a + b + c) * 0.5 
-alan_ucgen = sqrt(s * (s-a) * (s-b) * (s-c))
-alan_ucgen = float(alan_ucgen)
+                if (a < b+c) and (b < a+c) and (c < b+a):
 
-print(alan_ucgen)
+                        s = (a + b + c) * 0.5 
+                        alan_ucgen = sqrt(s * (s-a) * (s-b) * (s-c))
+                        alan_ucgen = float(alan_ucgen)
+
+                        print(alan_ucgen)
+
+                        break
+        except ValueError:
+                print('It is not a triangle. Try again!')
+
+        
