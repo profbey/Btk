@@ -40,14 +40,5 @@ result = course.find('com')          # if statement is False, it give -1 because
 result = "the format method is for function inside {}".format(number)
 
 
-
-
-
-
-
 print(result)
-
-
-
-
 
