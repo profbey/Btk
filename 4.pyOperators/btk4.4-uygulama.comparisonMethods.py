@@ -78,9 +78,8 @@ print('*** ' * 5)
 #5- parola ve email bilgisini isteyip dogrulugunu kontrol edin. 
 #   username = 'ahmetcavdar'   password = '3253'
 
-print('Maras Disindaki Maraslilari Yasatma, Okutma ve Koruma Dernegi Sistemi')
 
-username = 'ahmetcavdar'   
+username = 'ahmetcavcav'   
 password = 'a3253'
 
 girilenUsername = input('Kullanici adi: ')
