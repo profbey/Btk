@@ -95,11 +95,3 @@ print(f"Student NO is {findStudent}, student is {student['name']} {student['surn
 print("*** " * 5)
 
 
-
-
-
-
-
-
-
-
