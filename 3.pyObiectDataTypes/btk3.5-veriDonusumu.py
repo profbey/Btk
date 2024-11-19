@@ -41,8 +41,3 @@ print(isOnline)
 print(type(isOnline)) #bool ifadesi 1 olarak integer oldu. False olsaydi cevap 0 olurdu.
 
 
-
-
-
-
-
