@@ -18,6 +18,3 @@ for line in data.split('#'):
     students.append(student_info)
 print(f'\n* ex12 StudentKayit icindeki elemanlar : {students}')  
  
-
- 
-
