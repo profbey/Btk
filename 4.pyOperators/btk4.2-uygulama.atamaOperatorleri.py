@@ -4,19 +4,19 @@ numbers = 1, 5, 7, 10, 6
 
 #1- Kullanicidan aldiginiz iki sayinin carpimi ile x,y,z toplaminin farki nedir
 
-'''a = int(input("sayi ver #1: "))
+a = int(input("sayi ver #1: "))
 b = int(input('sayi ver #2: '))
 
 c = x+y+z
 
 sonuc = (a * b) - c 
 
-print(sonuc)'''
+print(sonuc)
 
 #2- y'nin x'e kalansiz bolumunu nedir
 
-'''y = y //  x
-print(y)'''
+y = y //  x
+print(y)
 
 #3- (x,y,z) toplaminin mod 3"u nedir
 
