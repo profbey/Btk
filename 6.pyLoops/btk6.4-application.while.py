@@ -22,21 +22,16 @@ try:
                         i +=1 
                         if i % 2 == 1:
                                 print(i)
-                        else:
-                                print('There is no single number in the range')
-                                
+                                                        
         elif j < initialNumber:
                 while j < initialNumber:
                         j +=1
                         if j % 2 ==1:
                                 print(j)
-                        else:
-                                print('There is no single number in the range')
-                                
+                                                        
         else:
                 print('These numbers are equal each other')
         
-       
 except ValueError:
         print('Try again')
 
