@@ -19,6 +19,3 @@ print(greating[3:7])        # dorduncu karakterden yedinci karaktere kadar yazdi
 print(greating[3: ])        # dorduncu karakterden sonuna kadar yazdirir.
 print(greating[ :8])        # en bastan dokuzuncu karaktere kadar yazdirir.
 print(greating[2:40:2])     # ucuncu karakterden kirkbirinci karaktere kadar iki karakterde bir alir.
-
-
-
