@@ -51,14 +51,16 @@ while (i > 0):
 numbers = []
 
 i = 0
+try:
+        while i<5:
+                number = int(input('Enter a number: '))
+                numbers.append(number)
+                i += 1
+        numbers.sort()
+        print(numbers)
 
-while i<5:
-        number = int(input('Enter a number: '))
-        numbers.append(number)
-        i += 1
-numbers.sort()
-print(numbers)
-
+except ValueError:
+        print('Try again with numbers, No string')
 
 # 5- kullanicidan alacagiz n tane urun bilgisini liste icinde saklayin
 #  **    urun sayisini kullaniciya sorun 
