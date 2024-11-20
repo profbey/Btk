@@ -2,15 +2,15 @@ numbers = [6,46,33,34,54,7,78,9,49]
 
 # 1- numbers listesini while ile ekrana yazdirin
 
-'''i = 0 
+i = 0 
 
 while (i < len(numbers)):
         print(numbers[i])
-        i += 1'''
+        i += 1
 
 # 2- baslangc ve bitis degerlerini kullanicidan alip aradaki tum tek sayilari yazdirin 
 
-'''
+
 try:
         initialNumber = int(input('Entry first number: '))
         i = initialNumber
@@ -36,9 +36,9 @@ except ValueError:
         print('Try again')
 
 
-'''
+
 # 3- 1 ile 100 arasindaki degerleri tersten yazdirin
-'''
+
 i = 99 
 
 while (i > 0):
@@ -60,7 +60,7 @@ try:
         print(numbers)
 
 except ValueError:
-        print('Try again with numbers, No string')'''
+        print('Try again with numbers, No string')
 
 
 
