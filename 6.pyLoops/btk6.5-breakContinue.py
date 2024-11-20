@@ -20,6 +20,7 @@ while x < 5:
         if x == 2:              # Output : 1 3 4 5 (no '2')
                 continue
         print(x)
+
                         
  # Example 3 : What is the sum of positive numbers up to 100?
 
