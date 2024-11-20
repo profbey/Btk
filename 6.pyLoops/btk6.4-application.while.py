@@ -72,23 +72,25 @@ except ValueError:
 #  **  urun ekleme islemi bittiginde whole ile listeleyin.
 
 
-
 try:    
         
         storeDic = []
         n = int(input('Kac tane sayi istiyorsun? n: '))
         i = 0
+        if n > 0:
 
-        while i < n :
+                while i < n :
 
-                name  =     input("item name: ")
-                price = int(input("item price: "))
+                        name  =     input("item name: ")
+                        price = int(input("item price: "))
 
-                storeDic.append({'name' : name, 'price': price })
+                        storeDic.append({'name' : name, 'price': price })
                 
-                i += 1
+                        i += 1
 
-        print(storeDic)
+                print(storeDic)
+        else:
+                print('n value must be positive')
 
 except ValueError:
         print('Try again with numbers, No string')
