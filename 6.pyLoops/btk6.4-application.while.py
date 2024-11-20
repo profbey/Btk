@@ -38,7 +38,7 @@ except ValueError:
 
 '''
 # 3- 1 ile 100 arasindaki degerleri tersten yazdirin
-
+'''
 i = 99 
 
 while (i > 0):
@@ -60,14 +60,35 @@ try:
         print(numbers)
 
 except ValueError:
-        print('Try again with numbers, No string')
+        print('Try again with numbers, No string')'''
+
+
+
+
 
 # 5- kullanicidan alacagiz n tane urun bilgisini liste icinde saklayin
-#  **    urun sayisini kullaniciya sorun 
-#  **   dic list yapisi (name, price) seklinde olsun 
+#  **  urun sayisini kullaniciya sorun 
+#  **  dic list yapisi (name, price) seklinde olsun 
 #  **  urun ekleme islemi bittiginde whole ile listeleyin.
 
 
 
+try:    
+        
+        storeDic = []
+        n = int(input('Kac tane sayi istiyorsun? n: '))
+        i = 0
 
+        while i < n :
 
+                name  =     input("item name: ")
+                price = int(input("item price: "))
+
+                storeDic.append({'name' : name, 'price': price })
+                
+                i += 1
+
+        print(storeDic)
+
+except ValueError:
+        print('Try again with numbers, No string')
