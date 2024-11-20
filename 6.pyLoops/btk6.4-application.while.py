@@ -10,7 +10,7 @@ while (i < len(numbers)):
 
 # 2- baslangc ve bitis degerlerini kullanicidan alip aradaki tum tek sayilari yazdirin 
 
-
+'''
 try:
         initialNumber = int(input('Entry first number: '))
         i = initialNumber
@@ -36,10 +36,19 @@ except ValueError:
         print('Try again')
 
 
-
+'''
 # 3- 1 ile 100 arasindaki degerleri tersten yazdirin
 
-# 4- kullanicidan aldiginiz 5 sayiyi buyukten kucuge dogru yazdirin
+i = 99 
+
+while (i > 0):
+        print(numbers[i])
+        i -= 1
+
+
+# 4- kullanicidan aldiginiz 5 sayiyi buyukten kucuge dogru yazdirin.
+
+
 
 # 5- kullanicidan alacagiz n tane urun bilgisini liste icinde saklayin
 #  **    urun sayisini kullaniciya sorun 
