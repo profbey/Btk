@@ -69,30 +69,31 @@ except ValueError:
 #  **  urun sayisini kullaniciya sorun 
 #  **  dic list yapisi (name, price) seklinde olsun 
 #  **  urun ekleme islemi bittiginde whole ile listeleyin.
-
-try:    
+while True:
+        try:    
         
-        storeDic = []
-        i = 0
-        j = 1 
-        n = int(input('how many item will there be? n: '))
+                storeDic = []
+                i = 0
+                j = 1 
+                n = int(input('how many item will there be? n: '))
 
-        if n > 0:
+                if n > 0:
 
-                while i < n :
+                        while i < n :
 
-                        name  =     input("item Name: ")
-                        price = int(input("item Price: "))
+                                name  =     input("item Name: ")
+                                price = int(input("item Price: "))
 
-                        storeDic.append({'item no': j, 'name' : name, 'price': price })
+                                storeDic.append({'item no': j, 'name' : name, 'price': price })
                 
-                        i += 1 
+                                i += 1 
 
-                for item in storeDic:
-                        print(f"Shelf No:{j}, Item Name: {item['name']}, Price: {item['price']}")
-                        j += 1
-        else:
-                print('n value must be positive')
+                        for item in storeDic:
+                                print(f"Shelf No:{j}, Item Name: {item['name']}, Price: {item['price']}")
+                                j += 1
+                        break                
+                else:
+                        print('n value must be positive')
 
-except ValueError:
-        print('Try again with numbers, No string')
+        except ValueError:
+                print('Try again with numbers, No string')
