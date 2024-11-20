@@ -1,15 +1,15 @@
-numbers = [6,46,33,34,54,7,78,9,49]
-
 # 1- numbers listesini while ile ekrana yazdirin
 
+numbers = [6,46,33,34,54,7,78,9,49]
 i = 0 
 
 while (i < len(numbers)):
         print(numbers[i])
         i += 1
 
-# 2- baslangc ve bitis degerlerini kullanicidan alip aradaki tum tek sayilari yazdirin 
 
+
+# 2- baslangc ve bitis degerlerini kullanicidan alip aradaki tum tek sayilari yazdirin 
 
 try:
         initialNumber = int(input('Entry first number: '))
@@ -65,30 +65,32 @@ except ValueError:
 
 
 
-
 # 5- kullanicidan alacagiz n tane urun bilgisini liste icinde saklayin
 #  **  urun sayisini kullaniciya sorun 
 #  **  dic list yapisi (name, price) seklinde olsun 
 #  **  urun ekleme islemi bittiginde whole ile listeleyin.
 
-
 try:    
         
         storeDic = []
-        n = int(input('Kac tane sayi istiyorsun? n: '))
         i = 0
+        j = 1 
+        n = int(input('how many item will there be? n: '))
+
         if n > 0:
 
                 while i < n :
 
-                        name  =     input("item name: ")
-                        price = int(input("item price: "))
+                        name  =     input("item Name: ")
+                        price = int(input("item Price: "))
 
-                        storeDic.append({'name' : name, 'price': price })
+                        storeDic.append({'item no': j, 'name' : name, 'price': price })
                 
-                        i += 1
+                        i += 1 
 
-                print(storeDic)
+                for item in storeDic:
+                        print(f"Shelf No:{j}, Item Name: {item['name']}, Price: {item['price']}")
+                        j += 1
         else:
                 print('n value must be positive')
 
