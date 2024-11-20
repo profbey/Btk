@@ -2,36 +2,43 @@ numbers = [6,46,33,34,54,7,78,9,49]
 
 # 1- numbers listesini while ile ekrana yazdirin
 
-i = 0 
+'''i = 0 
 
 while (i < len(numbers)):
         print(numbers[i])
-        i += 1
+        i += 1'''
 
 # 2- baslangc ve bitis degerlerini kullanicidan alip aradaki tum tek sayilari yazdirin 
 
-numbers = [6,46,33,34,54,7,78,9,49]
-
 
 try:
-        initialNumber = int(input('entry first number: '))
+        initialNumber = int(input('Entry first number: '))
         i = initialNumber
-        finalNumber = int(input('entry second number: '))
+        finalNumber = int(input('Entry second number: '))
         j = finalNumber
 
-        if finalNumber < numbers and numbers < initialNumber:
-                while j < i:
-                        j = j +1
-                        print(j)
-                
-        elif initialNumber < numbers and numbers < finalNumber :
-                while i < j:
-                        i = i +1
-                        print(i)
+        if i < finalNumber:
+                while i < finalNumber:
+                        i +=1 
+                        if i % 2 == 1:
+                                print(i)
+                        else:
+                                print('There is no single number in the range')
+                                
+        elif j < initialNumber:
+                while j < initialNumber:
+                        j +=1
+                        if j % 2 ==1:
+                                print(j)
+                        else:
+                                print('There is no single number in the range')
+                                
+        else:
+                print('These numbers are equal each other')
         
-
+       
 except ValueError:
-        print('try again')
+        print('Try again')
 
 
 
