@@ -42,12 +42,11 @@ except ValueError:
 i = 99 
 
 while (i > 0):
-        print(numbers[i])
+        print(i)
         i -= 1
 
 
 # 4- kullanicidan aldiginiz 5 sayiyi buyukten kucuge dogru yazdirin.
-
 
 
 # 5- kullanicidan alacagiz n tane urun bilgisini liste icinde saklayin
