@@ -48,6 +48,17 @@ while (i > 0):
 
 # 4- kullanicidan aldiginiz 5 sayiyi buyukten kucuge dogru yazdirin.
 
+numbers = []
+
+i = 0
+
+while i<5:
+        number = int(input('Enter a number: '))
+        numbers.append(number)
+        i += 1
+numbers.sort()
+print(numbers)
+
 
 # 5- kullanicidan alacagiz n tane urun bilgisini liste icinde saklayin
 #  **    urun sayisini kullaniciya sorun 
