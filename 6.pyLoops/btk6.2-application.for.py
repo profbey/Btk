@@ -54,18 +54,4 @@ for prd in products:
         prc = int(prd['price'])
         if prc <= 6000:
                 print(prd['name'])
-        
-
-                
-
-
-
-
-
-
-
-
-
-
-
-
+  
