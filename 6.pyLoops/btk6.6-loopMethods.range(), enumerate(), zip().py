@@ -11,12 +11,40 @@ print(list(range(50,100,10)))    # [50, 60, 70, 80, 90]
                                  # Starting from 50 and going up to 100 by 10s
 
 
+
+
+
 # enumerate 'birer birer saymak'
 
-greeting = 'hello there'
+index = 0 
+greeting = 'hello world'
 
 for letter in greeting:
-        a
+        print(f"index: {index} letter: {letter}")       # or print(f"index: {index} letter:{greeting[index]})
+        index +=1 
+
+
+
+# alternative 'enumerate' method
+
+greeting = 'hi there'
+
+for indexN,letterN in enumerate(greeting):
+        print(f'index: {indexN} letter: {letterN}')
+
+
+
+# enumerate method // whats that?
+
+method = 'enumerate'
+
+for i in enumerate(method):
+        print(i)
+
+
+
+
+
 
 
 
