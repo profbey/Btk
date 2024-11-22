@@ -1,0 +1,24 @@
+# alternative of 'for' and 'while' methods 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
