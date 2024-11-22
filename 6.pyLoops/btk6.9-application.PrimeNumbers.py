@@ -1,0 +1,22 @@
+
+# Examples: Find whether an entered number is prime or not.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
