@@ -43,16 +43,15 @@ for i in enumerate(method):
 
 
 
+# zip method 
+
+list1 = [1,2,3,4,5,6]
+list2 = ['a','b','c','d','e','f']
+list3 = [100,200,300,400,500,600]
+
+print(list(zip(list1,list2)))                           # zipping by index numbers
 
 
 
-
-
-
-
-
-
-
-
-
-
+for i1,i2,i3 in zip(list1,list2,list3):                 # alternative zipping
+        print(i1,i2,i3)
