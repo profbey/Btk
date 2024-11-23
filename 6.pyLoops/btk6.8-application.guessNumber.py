@@ -7,13 +7,28 @@
 
 '''
 
+import random
+
+sayi = random.randint(1,100)
+hak = 5
+sayac = 0
+
+while hak > 5:
+        hak -= 1
+        sayac +=1
+        tahmin = int(input('assumption : '))
+
+        if sayi == tahmin:
+                print('congrat')
+                break
+        elif sayi > tahmin:
+                print('up')
+        else:
+                print('down')
 
 
-
-
-
-
-
+        if hak == 0 :
+                print(f'you lose. the assumption number is {sayi}')
 
 
 
