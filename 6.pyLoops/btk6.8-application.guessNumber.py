@@ -22,35 +22,42 @@
  puanlama kisminda ise tahminle dogru sayi arasindaki farka göre puanlama yapilacak/
 ***** 
 '''
-
 import random
 
-sayi = random.randint(1,100)
-hak = 5
+randomNumber = random.randint(1, 10)
 
+try:                                            # Its for input of right.
+    health = int(input('How many right you want?: '))
+    right = health
+except ValueError:
+    right = 5 
+print(f"You have {right} right.")
 
-while hak <= 5:
-        try:
+counter = 0 
+score = 100
 
-                tahmin = int(input('assumption : '))
-                hak -= 1
-                
+while right > 0:
+    try:
+        print(randomNumber, right, counter)
+        estimate = int(input('Your Estimate : '))
+        right -= 1
+
+        if randomNumber == estimate:
+            print(f'Congratulations, You got it right the {counter + 1 }. time.\nYour score is {score} ')
+            break
+        elif randomNumber > estimate:
+            print('up')
+        else:
+            print('down')
+
         
+        if randomNumber != estimate:            # Deduct points only for incorrect guesses
+            counter += 1
+            score -= (100/health) * counter 
 
-                if sayi == tahmin:
-                        print('congrat')
-                        break
-                elif sayi > tahmin:
-                        print('up')
-                else:
-                        print('down')
-
-
-                if hak == 0 :
-                        print(f'you lose. the assumption number is {sayi}')
-                        break
-        except ValueError:
-                print('try again with numbers')
-
-
+        if right == 0:
+            print(f'You LOSE. The Number is {randomNumber}')
+            break
+    except ValueError:
+        print('Try again with numbers!')
 
