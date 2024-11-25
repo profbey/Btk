@@ -23,7 +23,3 @@ if primeNumber:
     print(f"The number {number} is prime.")
 else:
     print(f"The number {number} is NOT prime.")
-
-
-
-
