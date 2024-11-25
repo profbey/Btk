@@ -38,7 +38,7 @@ score = 100
 
 while right > 0:
     try:
-        print(randomNumber, right, counter)
+        print(randomNumber, right, counter)     # To control numbers and debug
         estimate = int(input('Your Estimate : '))
         right -= 1
 
