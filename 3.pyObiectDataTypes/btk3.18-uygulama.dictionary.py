@@ -87,7 +87,7 @@ print("**** " * 5 )
 print(students)
 print("**** " * 5 )
 
-findStudent = input('Sorgulanacak stundent no: ')
+findStudent = input('Sorgulanacak student no: ')
 print(students[findStudent])
 
 student = students[findStudent]
