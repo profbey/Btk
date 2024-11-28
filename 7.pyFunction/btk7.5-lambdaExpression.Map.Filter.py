@@ -21,20 +21,12 @@ result = list(map(lambda num: num **2,numbers))
 print(result)
 
 
-
-def checkEven(num):
-        return num %2 == 0
-
 numbers = [1,3,6,7,12,42]
+
+def checkEven(num):                     # checkEven = (lambda num: num %2 == 0)
+        return num %2 == 0
 result = list(filter(checkEven,numbers))
 print(result)  
 
-
-
-
-
-
-
-
-
-
+result = list(filter(lambda num: num %2 == 0, numbers))
+print(result)
