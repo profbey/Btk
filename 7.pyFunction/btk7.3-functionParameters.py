@@ -51,7 +51,3 @@ def myFunction(a,b, *args, **kwargs):
         print(kwargs)                   # Output = {'key1': 'value 1', 'key2': 'value 2'}
 
 myFunction(10,20,30,40,50,60, key1 = 'value 1', key2 = 'value 2') 
-
-
-
-
