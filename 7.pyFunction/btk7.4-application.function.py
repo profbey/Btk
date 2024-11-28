@@ -1,6 +1,5 @@
 # 1- Gonderilen bir kelimeyi belirtilen kez ekranda gosteren fonksiyon yazin.
 
-
 def display(name,n):
         '''
         DOCSTR: Write a function that displays a sent word 
@@ -35,6 +34,8 @@ def add(*params):
 result = add(10,20,30,40,152,50,51,406,123,455,'hey') 
 print(result)
 
+
+
 # 3- Gonderilen 2 sayi arasindaki tum asal sayilari bulun. 
 
 def primeNumb(numb1,numb2):
@@ -53,9 +54,7 @@ numb2 = int(input('enter a numb: '))
 
 primeNumb(numb1,numb2)
 
-
-
-                                        
+                               
 
 # 4- Kendisine gonderilen bir sayinin tam bolenlerini bir liste seklinde dondurun.
 
@@ -89,17 +88,3 @@ try:
 
 except ValueError:
     print('try with numbers')
-
-
-
-
-
-
-
-
-
-
-
-
-
-
