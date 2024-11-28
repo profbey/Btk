@@ -1,4 +1,4 @@
-# Gonderilen bir kelimeyi belirtilen kez ekranda gosteren fonksiyon yazin.
+# 1- Gonderilen bir kelimeyi belirtilen kez ekranda gosteren fonksiyon yazin.
 
 
 def display(name,n):
@@ -23,21 +23,41 @@ except ValueError:
 
 
  
-# Kendine gonderilen sinirsiz sayidaki parametreyi bir listeye ceviren bir fonksiyon yazin.
-
+# 2- Kendine gonderilen sinirsiz sayidaki parametreyi bir listeye ceviren bir fonksiyon yazin.
 
 def add(*params):
         myList = []
 
-        for i in range(params):
+        for i in params:
                 myList.append(i)
         return myList
 
+result = add(10,20,30,40,152,50,51,406,123,455,'hey') 
+print(result)
 
-# Gonderilen 2 sayi arasindaki tum asal sayilari bulun. 
+# 3- Gonderilen 2 sayi arasindaki tum asal sayilari bulun. 
+
+def primeNumb(numb1,numb2):
+        primeList = []
+        for number in range(numb1, numb2 + 1):
+                if number > 1 :
+                        for i in range(2,number):
+                                if number % i == 0:
+                                        break
+                        else:
+                                primeList.append(number)
+        print(primeList)
+
+numb1 = int(input('enter a numb: '))
+numb2 = int(input('enter a numb: '))
+
+primeNumb(numb1,numb2)
 
 
-# Kendisine gonderilen bir sayinin tam bolenlerini bir liste seklinde dondurun.
+
+                                        
+
+# 4- Kendisine gonderilen bir sayinin tam bolenlerini bir liste seklinde dondurun.
 
 def find_intDivisor(userNumb):
     '''
