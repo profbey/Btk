@@ -2,15 +2,15 @@
 
 account_A = {
         'name'          : 'mark spencer',
-        'accountNo'  : 375486535187,
+        'accountNo'     : 375486535187,
         'balance'       : 1702,
         'extBalance'    : 500
 }
 
 account_B = {
         'name'          : 'calvin klein',
-        'accountNo'  : 456465321435,
-        'balance'       : 2900,
+        'accountNo'     : 456465321435,
+        'balance'       : 2000,
         'extBalance'    : 3000
 }
 
@@ -56,27 +56,12 @@ def withdraw(account, amount):
         print('*** '* 10 + '\n')
 
 
+def balanceInquiry(account):
+        print(f"Account number: {account['accountNo']} have ${account['balance']} and additional account have: ${account['extBalance']}")
+        print('** '* 10 + '\n')
 
 
+
+balanceInquiry(account_A)
 withdraw(account_A, 2000)
 withdraw(account_A, 200)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
