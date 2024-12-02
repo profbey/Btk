@@ -1,21 +1,21 @@
 # ATM Application
 
-hesapA = {
-        'name'          : 'mark',
-        'account.numb'  : 375486535187,
+account_A = {
+        'name'          : 'mark spencer',
+        'accountNo'  : 375486535187,
         'balance'       : 1702,
         'extBalance'    : 500
 }
 
-hesapB = {
-        'name'          : 'orhan keten',
-        'account.numb'  : 456465321435,
+account_B = {
+        'name'          : 'calvin klein',
+        'accountNo'  : 456465321435,
         'balance'       : 2900,
         'extBalance'    : 3000
 }
 
 
-def paracek(account, amount):
+def withdraw(account, amount):
         print(f"welcome {account['name']} ")
 
         if (account['balance'] >= amount):
@@ -25,6 +25,7 @@ def paracek(account, amount):
         else:
                 total = account['balance'] + account['extBalance']
                 remaining = total - amount
+                       
                 
                 if total >= amount:
                         
@@ -32,23 +33,33 @@ def paracek(account, amount):
                         
 
                         if wantingExtBalance == 'y':
-                                print(f"You can take {amount} $.\nRemaining total balance {remaining}$.")
+                                # Assuming 'c' represents the amount to be withdrawn from extBalance,
+                                # you need to assign it a value before using it.
+                                # For example, if 'c' should be the difference between the requested amount and the main balance:
+                                c = amount - account['balance']  
+                                if amount == account['balance'] + c :
+                                        account['extBalance'] = account['extBalance'] - c
+                                        account['balance'] = 0       
+                                print(f"You can take {amount} $")
+                                print(f"Remaining normal account balance: {account['balance']}.\nAdditional account balance: {account['extBalance']}$.")
+                                
+
                                
                         elif wantingExtBalance == 'n':
-                                print(f"There is {account['balance']} in your account number :{account['account.numb']}.\nThe request is denied.")
+                                print(f"There is {account['balance']} in your account number({account['accountNo']}).\nThe request is denied.")
 
                         else: 
                                 print('pls just enter "y" or "n" ')
                 
                 else:
                         print(f'You do not have ${amount} in your total account.')
+        print('*** '* 10 + '\n')
 
 
 
 
-
-paracek(hesapA, 20000)
-
+withdraw(account_A, 2000)
+withdraw(account_A, 200)
 
 
 
