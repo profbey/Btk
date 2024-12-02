@@ -65,3 +65,12 @@ def balanceInquiry(account):
 balanceInquiry(account_A)
 withdraw(account_A, 2000)
 withdraw(account_A, 200)
+
+### Update Suggestion : hesap numarasi veya hesap adi + sifre ile kullanici arayuzune girsin. 
+# sonra kac para cekmek istedigini sorsun.
+# excel dosyasini her isleme gore guncellesin.
+# her islem sonrasinda devam edip cikip cikmak istemedigini sorsun. 
+# bu islemin tamamini bir arayuz uzerinden yapsin 
+# account bilgisi eklenme islemi admin kullanicisiyla girince arayuz uzerinden doldurulabilsin. 
+# transfer islemlerine musade edilebilsin. transfer yapilan iki tarafta da bakiye excel dosyasinda guncellensin
+# para yatir islemi yapilabilir. 
