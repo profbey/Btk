@@ -20,13 +20,3 @@ instead of catching all of these one by one, we should evaluate them under the e
 https://docs.python.org/3/library/exceptions.html => Exceptional hierarcy
 
 '''
-
-
-
-
-
-
-
-
-
-
