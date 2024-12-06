@@ -25,13 +25,13 @@ class Quiz:
         print(f"Question {self.question_index + 1}: {question.text}")
 
         for i, choice in enumerate(question.choices):
-            print(f"{i + 1}. {choice}")                         # Seçenekleri numaralandırarak gösterme
+            print(f"{i + 1}. {choice}")                         # Secenekleri numaralandirarak gosterme
 
         answer = input("** Answer (enter the number of your choice): ")
         try:
-            answer_index = int(answer) - 1                      # Kullanıcıdan gelen cevabı sayıya çevirme
+            answer_index = int(answer) - 1                      # Kullanicidan gelen cevabi sayiya cevirme
             if 0 <= answer_index < len(question.choices):
-                user_answer = question.choices[answer_index]    # Seçenek listesinden cevabı alma
+                user_answer = question.choices[answer_index]    # Secenek listesinden cevabi alma
                 if question.check_answer(user_answer):
                     self.score += 1
             else:
@@ -66,9 +66,9 @@ questions = [
              "print('Hello, World!')"),
     Question("Which data type is used to store a sequence of", 
              ["int", "float", "str", "bool"], "str"),
-    Question("x = 5\ny = 2\nprint(x // y)\nWhat is the output of the following code?\n", 
+    Question("x = 5\ny = 2\nprint(x // y)\nWhat is the output of the following codei\n", 
              ["2.5", "2", "3", "2.0"], "2"),
-    Question("How do you define a function in Python?", 
+    Question("How do you define a function in Pythoni", 
              ["function my_function():", "def my_function():", 
               "my_function():", "func my_function():"], 
              "def my_function():"),
@@ -79,6 +79,48 @@ questions = [
              "To calculate the length of a string"),
 ]
 
-# Quiz başlatma
+# Quiz baslatma
 quiz = Quiz(questions)
-quiz.display_question()                                         # İlk soruyu göstermek için display_question() çağırılıyor
+quiz.display_question()                                         # İlk soruyu gostermek icin display_question() cağiriliyor
+
+
+
+'''
+Algoritma:
+
+    Baslangic:
+        Question sinifi, her bir soruyu temsil eder ve sorunun metnini, seceneklerini ve dogru cevabini depolar.
+        Quiz sinifi, sorulari yonetir, skoru tutar ve mevcut soru indeksini izler.
+        Sorular questions listesinde tanimlanir ve Quiz sinifina iletilir.
+
+    Soru Gosterme:
+        display_question() fonksiyonu, mevcut soruyu ekrana yazdirir ve kullanicidan cevap ister.
+        Kullanici cevabini girer.
+
+    Cevap Kontrolu:
+        Kullanicinin cevabi, check_answer() fonksiyonu ile dogru cevapla karsilastirilir.
+        Cevap dogruysa, skor 1 artirilir.
+
+    Sonraki Soru:
+        load_next_question() fonksiyonu, bir sonraki soruyu yukler ve goruntuler.
+        Eger tum sorular cevaplanmissa, show_score() fonksiyonu cagirilir.
+
+    Skor Gosterme:
+        show_score() fonksiyonu, kullanicinin toplam skorunu ekrana yazdirir.
+
+        
+Tetikleyiciler:
+
+    Quiz Baslatma:
+        quiz = Quiz(questions) satiri, Quiz sinifini baslatir ve quiz oyununu baslatir.
+        quiz.display_question() satiri, ilk soruyu gostermek icin display_question() fonksiyonunu tetikler.
+
+    Cevap Verme:
+        Kullanici cevabini girdisinde, display_question() fonksiyonu icindeki kod tetiklenir ve cevap kontrol edilir.
+
+    Sonraki Soru:
+        load_next_question() fonksiyonu, bir sonraki soruyu yklemek ve goruntulemek icin tetiklenir.
+        Bu fonksiyon, display_question() fonksiyonu icindeki cevap kontrolunden sonra veya quiz baslatildiginda cagirilir.
+
+    Quiz Bitisi:
+        Tum sorular cevaplandiginda, show_score() fonksiyonu tetiklenir ve kullanicinin skoru gosterilir.'''
