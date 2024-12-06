@@ -16,16 +16,11 @@ person = {
 
 def func(x):
         '''
-        the information of function
+        This information about the function will be entered later  
         '''
         print(f'x: {x}')
 
 class Person:
-        def processingDisplay():
+        def processingDisplay(self):
                 print('The module is processing..')
-
-
-
-
-
 
