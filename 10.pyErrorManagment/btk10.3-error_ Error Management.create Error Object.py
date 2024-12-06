@@ -1,4 +1,4 @@
-# Rasing an  Exception 
+# Rasing an  Exception => password checking
 
 '''
 
@@ -8,10 +8,6 @@ if we want to limit the function, we need to create our own error statement.
 in this case, the 'raise Exception()' statement is used
 
 '''
-
-# x = 10 
-# if x > 5:
-#         raise Exception('x cannot take value bigger than 5')
 
 def check_password(psw):
        
@@ -33,8 +29,6 @@ def check_password(psw):
                 raise Exception('Password cannot contain space')
         else:
                 print('The password is accepted.')
-
-
 
 
 while True:
