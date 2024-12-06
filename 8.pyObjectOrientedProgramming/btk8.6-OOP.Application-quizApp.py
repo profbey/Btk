@@ -17,18 +17,21 @@ class Quiz:
     def get_question(self):
         return self.questions[self.question_index]
 
-    def display_question(self):
+    def display_question(self):                                 # Define question_number and total_questions here                                   
+        question_number = self.question_index + 1
+        total_questions = len(self.questions)
+        print(f" Question {question_number} of {total_questions} ".center(59, "*"))
         question = self.get_question()
         print(f"Question {self.question_index + 1}: {question.text}")
 
         for i, choice in enumerate(question.choices):
-            print(f"{i + 1}. {choice}")  # Seçenekleri numaralandırarak gösterme
+            print(f"{i + 1}. {choice}")                         # Seçenekleri numaralandırarak gösterme
 
         answer = input("** Answer (enter the number of your choice): ")
         try:
-            answer_index = int(answer) - 1  # Kullanıcıdan gelen cevabı sayıya çevirme
+            answer_index = int(answer) - 1                      # Kullanıcıdan gelen cevabı sayıya çevirme
             if 0 <= answer_index < len(question.choices):
-                user_answer = question.choices[answer_index]  # Seçenek listesinden cevabı alma
+                user_answer = question.choices[answer_index]    # Seçenek listesinden cevabı alma
                 if question.check_answer(user_answer):
                     self.score += 1
             else:
@@ -37,7 +40,6 @@ class Quiz:
             print("Invalid input. Please enter a number.")
 
         self.load_next_question()
-        print("-" * 30 + "\n")
 
     def load_next_question(self):
         if self.question_index + 1 < len(self.questions):
@@ -47,10 +49,9 @@ class Quiz:
         else:
             self.show_score()
 
-    def display_progress(self):
-        question_number = self.question_index + 1 
-        total_questions = len(self.questions)
-        print(f" Question {question_number} of {total_questions} ".center(59, "*"))
+    def display_progress(self):                                 # question_number and total_questions are now defined in display_question
+                
+        print("-" * 30 + "\n")
 
     def show_score(self):
         total_questions = len(self.questions)
@@ -66,4 +67,4 @@ questions = [
 
 # Quiz başlatma
 quiz = Quiz(questions)
-quiz.display_question()  # İlk soruyu göstermek için display_question() çağırılıyor 
+quiz.display_question()                                         # İlk soruyu göstermek için display_question() çağırılıyor
