@@ -21,16 +21,16 @@ class Movie():
         def __len__(self) -> int:
                 return self.duration
         
-        def __del__(self) :
+        def __del__(self):
                 return print(f'The object deleted')
 
 m = Movie('Movie Name','Director Name' ,120)
 
 print(type(m))
 print(len(m))
+print(m)
 
 
-del m 
 
 
 
