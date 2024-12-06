@@ -49,8 +49,7 @@ class Quiz:
         else:
             self.show_score()
 
-    def display_progress(self):                                 # question_number and total_questions are now defined in display_question
-                
+    def display_progress(self):                                 # question_number and total_questions are now defined in display_question    
         print("-" * 30 + "\n")
 
     def show_score(self):
@@ -60,9 +59,24 @@ class Quiz:
 
 # Sorular
 questions = [
-    Question("What is the best programming language?", ["c++", "python", "javascript", "html"], "javascript"),
-    Question("What is the most popular programming language?", ["c++", "python", "javascript", "html"], "python"),
-    Question("What is the most money-making programming language?", ["c++", "python", "javascript", "html"], "c++"),
+    Question("What is the correct way to print 'Hello, World!'", 
+             ["print('Hello, World!')", "echo 'Hello, World!'", 
+              "System.out.println('Hello, World!')", 
+              "Console.WriteLine('Hello, World!')"], 
+             "print('Hello, World!')"),
+    Question("Which data type is used to store a sequence of", 
+             ["int", "float", "str", "bool"], "str"),
+    Question("x = 5\ny = 2\nprint(x // y)\nWhat is the output of the following code?\n", 
+             ["2.5", "2", "3", "2.0"], "2"),
+    Question("How do you define a function in Python?", 
+             ["function my_function():", "def my_function():", 
+              "my_function():", "func my_function():"], 
+             "def my_function():"),
+    Question("What is the purpose of the `len()` function", 
+             ["To calculate the length of a string", 
+              "To find the maximum value in a list", 
+              "To sort a list", "To reverse a string"], 
+             "To calculate the length of a string"),
 ]
 
 # Quiz başlatma
