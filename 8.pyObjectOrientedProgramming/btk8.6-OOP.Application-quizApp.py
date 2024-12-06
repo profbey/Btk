@@ -1,73 +1,69 @@
-# question 
-
-class Question():
+class Question:
     def __init__(self, text, choices, answer):
         self.text = text
         self.choices = choices
         self.answer = answer
 
-    def checkAnswer(self, answer):
+    def check_answer(self, answer):
         return self.answer == answer
 
 
-# QUIZ
-
-q1 = Question(f'What is the best programming language?'                 , ['c++', 'python', 'javascript', 'html'], 'javascript')
-q2 = Question(f'What is the most popular programming language?'         , ['c++', 'python', 'javascript', 'html'], 'python')
-q3 = Question(f'What is the the most money-making programming language?', ['c++', 'python', 'javascript', 'html'], 'c++')
-
-questions = [q1,q2,q3]
-
-
-class Quiz():
+class Quiz:
     def __init__(self, questions):
-        self.questions     = questions
-        self.score         = 0 
-        self.questionIndex = 0
+        self.questions = questions
+        self.score = 0
+        self.question_index = 0
 
-    def getQuestion(self):
-        return self.questions[self.questionIndex]
+    def get_question(self):
+        return self.questions[self.question_index]
 
-    def displayQuestion(self):
-        question = self.getQuestion()                                   # Renamed 'questions' to 'question' for clarity
-        print(f'Question {self.questionIndex + 1}: {question.text}')    # Access the text attribute directly, not as a method call
+    def display_question(self):
+        question = self.get_question()
+        print(f"Question {self.question_index + 1}: {question.text}")
 
+        for i, choice in enumerate(question.choices):
+            print(f"{i + 1}. {choice}")  # Seçenekleri numaralandırarak gösterme
 
-        for q in question.choices:
-            print(' ' + q)
+        answer = input("** Answer (enter the number of your choice): ")
+        try:
+            answer_index = int(answer) - 1  # Kullanıcıdan gelen cevabı sayıya çevirme
+            if 0 <= answer_index < len(question.choices):
+                user_answer = question.choices[answer_index]  # Seçenek listesinden cevabı alma
+                if question.check_answer(user_answer):
+                    self.score += 1
+            else:
+                print("Invalid choice. Please enter a number between 1 and", len(question.choices))
+        except ValueError:
+            print("Invalid input. Please enter a number.")
 
-        answer = input('** Answer: ')
-        self.guess(answer)                                              # Call self.guess() now that it's an instance method
-        self.loadQuestion()                                             # Call self.loadQuestion() now that it's an instance method
+        self.load_next_question()
+        print("-" * 30 + "\n")
 
-        if question.checkAnswer(answer):                                # Call checkAnswer on the Question object (question)
-            self.score += 1 
-
-        print('- ' * 30 + '\n')
-
-    
-    def loadQuestion(self):
-        if len(self.questions) == self.questionIndex + 1:               # Changed to +1 to avoid index error
-            self.showScore()                                            # Corrected to call showScore instead of self.score()
+    def load_next_question(self):
+        if self.question_index + 1 < len(self.questions):
+            self.display_progress()
+            self.question_index += 1
+            self.display_question()
         else:
-            self.displayProgress()
-            self.questionIndex += 1 
+            self.show_score()
 
-    def displayProgress(self):
-        totalQuestion = len(self.questions)
-        questionNumber= self.questionIndex + 1
+    def display_progress(self):
+        question_number = self.question_index + 1 
+        total_questions = len(self.questions)
+        print(f" Question {question_number} of {total_questions} ".center(59, "*"))
 
-        if questionNumber > totalQuestion:
-            print('Quiz is over.')
-        else:
-            print(f' Question {questionNumber} of {totalQuestion} '.center(59,'*'))
-                                                                        # Define guess() and loadQuestion() as instance methods
-    def guess(self,answer):
-        question = self.getQuestion()
-
-    def showScore(self):
-        print(f'Score: ',self.score)
+    def show_score(self):
+        total_questions = len(self.questions)
+        print(f"Score: {self.score} / {total_questions} ")
 
 
+# Sorular
+questions = [
+    Question("What is the best programming language?", ["c++", "python", "javascript", "html"], "javascript"),
+    Question("What is the most popular programming language?", ["c++", "python", "javascript", "html"], "python"),
+    Question("What is the most money-making programming language?", ["c++", "python", "javascript", "html"], "c++"),
+]
+
+# Quiz başlatma
 quiz = Quiz(questions)
-quiz.loadQuestion()
+quiz.display_question()  # İlk soruyu göstermek için display_question() çağırılıyor 
