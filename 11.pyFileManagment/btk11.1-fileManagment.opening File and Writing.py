@@ -35,23 +35,3 @@ file.close()
 
 
 # "r": (read) okuma modu varsayilan. Dosya konumunda yoksa hata verir. 
-
-
-
-
-
-
-
- 
-
-
-
-
-
-
-
-
-
-
-
-
