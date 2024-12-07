@@ -43,7 +43,7 @@ psw = input('password: ')
 try:
         checkPassword(psw)
 except TypeError as error:
-        print('ERROR')
+        print(f'ERROR: {error}')
 
 
 
