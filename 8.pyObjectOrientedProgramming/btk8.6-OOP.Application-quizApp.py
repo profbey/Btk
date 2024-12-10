@@ -57,7 +57,7 @@ class Quiz:
         print(f"Score: {self.score} / {total_questions} ")
 
 
-# Sorular
+# Sorular -> bu kismi txt/excel dosyasindan cekmek gerek. data degisebilir olmali
 questions = [
     Question("What is the correct way to print 'Hello, World!'", 
              ["print('Hello, World!')", "echo 'Hello, World!'", 
