@@ -25,6 +25,7 @@ students = {
 students = {}
 
 """for i in range(3):
+
     name = input("student name: ")
     surname = input("student surname: ")
     phone = input("student phone: ")
