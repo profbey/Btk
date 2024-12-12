@@ -4,7 +4,7 @@ age = 31
 
 greating = f"My name is {name} {surname} and, \nI am {age} years old" # f" {} " ifadesi str ifadeye inject edebilmemize yardimci olur. 
 print(greating)                                                       # \n ifadesi ise satiri asagiya atar.
-print(greating.capitalize(58))
+print(greating.capitalize())
 
 print(greating[0])
 print(greating[1])          # bosluk dahil her karakter bir indexleme islemi vardir. ifadeler sayilmaya 0'dan baslanir.
