@@ -22,13 +22,9 @@ message = message.replace('ğ','g').replace('ş','s').replace('ç','c').replace(
 
 message = message.center(50,'*') # bu 50 karakterlik bir kume olusturur ve yazan mesaji tam ortada konumlandirir. sagina ve soluna * koyar.
 
+print(message)
 
  
-
-
-
-
-
 ### PROJE FIKRI: bu find ifadesi ve diger fonksiyonlari kullanarak Search_Engine isimli uygulama yapilacak.
 
 ### Method     : butun dosyalarin isimlerini log dosyasi altinda toplayacak.
@@ -36,8 +32,3 @@ message = message.center(50,'*') # bu 50 karakterlik bir kume olusturur ve yazan
 # Buyuk/kucuk harf duyarliligi istemiyorsak .lower sonrasinda .split kullanacak.
 # Sonra .find kullanilarak dosya bulunacak.
 # Frakli bir seyde de bu arama metodunu kullanacaksak eger tum karakterleri .lower ile saklamak iyi olabilir. 
-
-
-print(message)
-
-
