@@ -36,6 +36,3 @@ len_numbers = len(numbers)
 len_letters = len(letters)
 print(f'\n*final* numbers: {numbers} \nlen = {len_numbers}, \nmin val_n: {val_n} \ncount(2)   = {numbers.count(2)}'.title())
 print(f'\n*final* letters: {letters} \nlen = {len_letters}, \nmax val_l: {val_l} \ncount("a") = {letters.count("a")}'.title())
-
-
- 
