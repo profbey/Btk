@@ -16,5 +16,5 @@ for line in data.split('#'):
     student_info = line.strip().split(',')
     student_info = line.split()
     students.append(student_info)
+    
 print(f'\n* ex12 StudentKayit icindeki elemanlar : {students}')  
- 
