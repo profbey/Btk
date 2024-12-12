@@ -44,7 +44,3 @@ user_data = {
 
 print(user_data['cinar']) 
 print(user_data['ahmet']['roles'])
-
-
-
-
