@@ -18,5 +18,3 @@ print('the result is {r:1.4}'.format(r=result)) # 1 ifadesi noktadan once kac ba
 print(f"My name is {name} {surname} and i am {age} years old.") 
 
 # formatlama ile ayni sey sadece .format(name) yerine {name} icerisine dogrudan yazabiliriz.
-
-
