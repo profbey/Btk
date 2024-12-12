@@ -31,6 +31,3 @@ a = set(myList)     # Tekrarlanan seyleri ortadan kaldirir listeyi tekillestirir
 a = sorted(a)       # siralama yapar. 
 
 print(a) 
-
-
- 
