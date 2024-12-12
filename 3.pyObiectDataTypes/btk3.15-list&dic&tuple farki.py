@@ -37,4 +37,3 @@ Ornek Kullanim Alanlari
         Fonksiyon parametresi: def hesapla(x, y): ... (x ve y bir tuple icinde de gonderilebilir)
         Sozluk anahtari: person = {("ad", "soyad"): ("Ali", "Veli")}
 """
-
