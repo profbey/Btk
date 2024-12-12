@@ -29,4 +29,3 @@ userTotal = [userA, userB]
 
 print(userTotal)
 print(userTotal[0][1])
-
