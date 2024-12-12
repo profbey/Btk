@@ -41,4 +41,3 @@ result = "the format method is for function inside {}".format(number)
 
 
 print(result)
-
