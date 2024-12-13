@@ -22,3 +22,33 @@ while True:                             # These all codes == for i in lst: print
         break
 
 
+
+## Why we do? Why we learn 
+## We may want to create a class like list ourselves. In this case, we can use an iterator.
+
+class myNumb:
+
+    def __init__(self, start, stop):
+        self.start = start
+        self.stop = stop
+        
+    
+    def __iter__(self):
+        return self
+    
+    def __next__(self):
+        if self.start <= self.stop:
+            x = self.start
+            self.start  += 1
+            return x 
+        else:
+            raise StopIteration
+
+lst = myNumb(30,20)
+
+while True:                             # for i in lst: print(i)
+    try:                                
+        i = next(lst)
+        print(i)
+    except StopIteration:
+        break
