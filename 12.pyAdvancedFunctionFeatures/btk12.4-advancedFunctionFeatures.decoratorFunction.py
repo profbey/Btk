@@ -36,25 +36,32 @@ sayHello('user')
 
 
 
-
 import math
 import time
 
-def usalma(a,b):
-    start = time.time()
-    time.sleep(1)
-    print(math.pow(a,b))
-    finish = time.time()
-    totalTime = str(finish - start)
-    print(f'function \'usalma\': {totalTime}')
+def cal_time(func):
+    def inner(*args,**kwargs):
+        start = time.time()
+        time.sleep(1)
 
+        func(*args,**kwargs)
+
+        finish = time.time()
+        totalTime = str(finish - start)
+        
+        print(f'function {func.__name__}: {totalTime}')
+    return inner
+
+@cal_time
+def usalma(a,b):
+    print(math.pow(a,b))
+
+@cal_time
 def faktorial(num):
-    start = time.time()
-    time.sleep(1)
     print(math.factorial(num))
-    finish = time.time()
-    totalTime = str(finish - start)
-    print(f'function \'faktorial\': {totalTime}')
 
 usalma(5,6)
 faktorial(13)
+
+
+
