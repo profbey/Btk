@@ -35,3 +35,26 @@ def sayHello(name):
 sayHello('user')
 
 
+
+
+import math
+import time
+
+def usalma(a,b):
+    start = time.time()
+    time.sleep(1)
+    print(math.pow(a,b))
+    finish = time.time()
+    totalTime = str(finish - start)
+    print(f'function \'usalma\': {totalTime}')
+
+def faktorial(num):
+    start = time.time()
+    time.sleep(1)
+    print(math.factorial(num))
+    finish = time.time()
+    totalTime = str(finish - start)
+    print(f'function \'faktorial\': {totalTime}')
+
+usalma(5,6)
+faktorial(13)
