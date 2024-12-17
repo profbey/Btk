@@ -1,0 +1,64 @@
+
+""""""""""""""""""""""""""""Python'da Tek Tırnak ve Çift Tırnak Arasındaki farklar""""""""""""""""""""""""""""
+
+Python'da, tek tırnak (') ve çift tırnak (") genellikle string (metin) verilerini tanımlamak için kullanılır 
+ve çoğu durumda birbirlerinin yerine kullanılabilirler. Ancak, bazı ince farklar ve kullanım durumları vardır:
+
+1. Birbirlerinin İçinde Kullanım:
+
+    Eğer bir string içinde tek tırnak kullanmak istiyorsanız, string'i çift tırnakla tanımlamanız gerekir. 
+        Örnek: "Bu bir 'tek tırnak' içeren string."
+    
+    Eğer bir string içinde çift tırnak kullanmak istiyorsanız, string'i tek tırnakla tanımlamanız gerekir.
+        Örnek: 'Bu bir "çift tırnak" içeren string.'
+
+    Bu sayede, string içindeki tırnak işaretleri kaçış karakteri (\) kullanmadan doğrudan yazılabilir ve 
+    kod daha okunaklı hale gelir.
+
+2. Kaçış Karakterleri:
+
+    Tek tırnakla tanımlanmış bir string içinde tek tırnak kullanmak için, kaçış karakteri (\) kullanmanız 
+    gerekir. Örnek: 'Bu bir \'tek tırnak\' içeren string.'
+    
+    Çift tırnakla tanımlanmış bir string içinde çift tırnak kullanmak için, kaçış karakteri (\) kullanmanız
+    gerekir. Örnek: "Bu bir \"çift tırnak\" içeren string."
+
+3. Üçlü Tırnaklar:
+
+    Üçlü tek tırnak (''') veya üçlü çift tırnak (""") çok satırlı stringler oluşturmak için kullanılır. Örnek:
+
+    aciklama = """Bu çok satırlı
+        bir string örneğidir."""
+
+
+    Docstring'ler (fonksiyon veya sınıfların açıklamaları) için üçlü çift tırnak kullanılması genel bir Python
+    kuralıdır.
+
+4. JSON ve Diğer Veri Formatları:
+
+    JSON gibi bazı veri formatları, anahtarların (keys) çift tırnak içinde olmasını gerektirir. Bu nedenle, 
+        JSON verisi oluştururken veya ayrıştırırken çift tırnak kullanmanız önemlidir.
+
+
+Özet:
+
+    *Tek tırnak ve çift tırnak, çoğu durumda string tanımlamak için birbirlerinin yerine kullanılabilir.
+    
+    *Bir string içindeki tırnak işaretlerini kaçış karakteri kullanmadan yazmak için, dıştaki tırnak işaretini 
+        farklı seçmek daha pratiktir.
+    
+    *Üçlü tırnaklar çok satırlı stringler ve docstring'ler için kullanılır.
+    
+    *JSON gibi bazı veri formatları çift tırnak kullanımını zorunlu kılar.
+        JSON standardı gereği anahtarların (keys) çift tırnak içinde olması gerekiyor.
+        Tek tırnak kullanımı JSON'da geçerli bir sözdizimi değil
+
+Genel olarak, tutarlı bir stil seçmek ve proje boyunca aynı stili kullanmak kodun okunabilirliğini artırır.
+PEP 8 (Python kodlama stil kılavuzu) bu konuda özel bir tavsiyede bulunmamaktadır, ancak tutarlılık ve 
+okunabilirlik vurgulanmaktadır. 
+
+
+
+SOURCES:    stackoverflow.com/questions/56011/single-quotes-vs-double-quotes-in-python
+            stackoverflow.com/questions/65758620/are-there-any-differences-in-and-in-python
+            docs.ckan.org/en/ckan-2.1.5/python-coding-standards.html
