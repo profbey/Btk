@@ -147,4 +147,60 @@ rst = re.findall('o*r',strEx)           # ['r', 'r', 'r', 'r', 'r']
 rst = re.findall('o+u',strEx)           # ['ou', 'ou']
 
 
+'''
+    ?  -Bir karakterin sifir veya bir kez olmasini kontrol eder.
+    
+        ma?n    =>  mn      : No match
+                    man     : 1 match
+                    maaan   : 1 match
+                    main    : No match (a'nin bitisiginde n yok)
+'''
+rst = re.findall('o?u',strEx)           # ['ou', 'u', 'ou']
+
+
+'''
+    {}  -Karakter sayisini kontrol eder.
+    
+        al{2}       =>  a karakterinin arkasina l karakteri 2 kez tekrarlanmali.
+        al{2,3}     =>  a karakterinin arkasina l karakteri en az 2 en fazla 3 kere tekrarlanmali.
+        [0-9]{2,4}  =>  en az 2 en cok 4 basamakli sayilar.                 
+'''
+rst = re.findall('f{2}',strEx)         # ['ff']
+rst = re.findall('[0-9]{2,3}',strEx)   # ['60']
+
+
+'''
+    |  -OR ifadesidir, a yada b secekleri arasinda alternatif sunar.
+    
+        a|b     =>  cde     : No match
+                    ade     : 1 match
+                    acdbea  : 3 match
+'''
+rst = re.findall('o|u',strEx)           # ['o', 'o', 'u', 'o', 'o', 'o', 'u', 'o', 'o', 'u']
+
+
+'''
+    ()  -Gruplamak icin kullanilir.
+
+        (a|b|c)xz   =>  a,b,c karakterinin arkasina xz karakterleri gelmeli.             
+'''
+'''
+    \   -Ozel karakterleri aramizi saglar.
+        \$a     =>  $ karakterlerinin arkasina a karakterini arar, yani 
+                    $ regular expression engine tarafindan yorumlanmaz.
+
+    \A  -Belirtilen karakter string in basina mi?
+        \Athe   =>  'the' string in basinda mi
+
+    \Z  -Belirtilen karakter string in sonunda mi 
+        the\Z   =>  'the' string in sonunda mi
+
+    \b  -Belirtilen karakter kelimenin basinda ya da sonunda mi?
+        \bthe   =>  'the' kelimenin basinda mi?
+        
+'''
+rst = re.findall(r'\APython',strEx)    # ['Python']
+rst = re.findall(r'hours\Z',strEx)     # ['hours']
+rst = re.findall(r'hours$',strEx)      # ['hours']
+
 print(rst)
