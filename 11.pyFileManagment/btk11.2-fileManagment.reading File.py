@@ -18,7 +18,6 @@ print(content)
 file.close
 
 
-'''
 content1 = file.read()
 print(' content 1 '.center('*',30))
 print(content1)
@@ -27,16 +26,16 @@ content2 =file.read()                   # open() fonsiyonu imleci biraktigi yerd
 print(' content 2 '.center('-',30))     # bu yuzden, content2 dosyasi bos olur. print() bir sey yazamaz.
 print(content2)                         # print() bir sey yazamaz.
 file.close
-'''
 
-'''
+
+
 contentFile = file.read(5)              # ilk 5 karakteri yazdirir.
 contentFile = file.read(3)              # codu tekrar calistirdigimizda sonraki 3 karakteri yazdirir.
 contentFile = file.read(3)              # codu tekrar calistirdigimizda sonraki 4 karakteri yazdirir.
 
 print(contentFile)
 file.close
-'''
+
 
 
 # readline() function                   -> her okuma islemini satir olarak yapar ama sona bir satir boslugu birakir.
