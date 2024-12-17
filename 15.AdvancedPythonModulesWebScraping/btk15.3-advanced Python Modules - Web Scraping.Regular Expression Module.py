@@ -5,6 +5,9 @@
 # kullanabilirsin/
 # regular expression ifadeleri nasil yapilir? nasil kullanilir.
 
+# SOURCE -> https://www.w3schools.com/python/python_regex.asp
+#           https://docs.python.org/3/library/re.html
+
 import re
 
 dir_re = [
@@ -197,6 +200,23 @@ rst = re.findall('o|u',strEx)           # ['o', 'o', 'u', 'o', 'o', 'o', 'u', 'o
 
     \b  -Belirtilen karakter kelimenin basinda ya da sonunda mi?
         \bthe   =>  'the' kelimenin basinda mi?
+        the\b   =>  'the' kelimenin sonunda mi?
+
+    \B  -Belirtilen karakter kelimenin basinda ya da sonunda DEGIL mi?
+        \Bthe   =>  'the' kelimenin basinda DEGIL mi?
+        the\B   =>  'the' kelimenin basinda DEGIL mi?
+
+    \d  -[0-9] ile ayni anlama gelir yani rakamlari arar 
+        \d      =>  12abc34
+
+    \D  -[^0-9] ile ayni anlama gelir yani rakam OLMAYANLARI arar 
+        \D      =>  1ab44_55
+
+    \s  -Bosluk karakterlerini arar
+    \S  -Bosluk karakterleri disindakileri arar
+    \w  -Alfabetik karakter, rakamlar ve alt cizgi karakteri arar
+    \W  -\w tam tersi 
+    
         
 '''
 rst = re.findall(r'\APython',strEx)    # ['Python']
@@ -204,3 +224,4 @@ rst = re.findall(r'hours\Z',strEx)     # ['hours']
 rst = re.findall(r'hours$',strEx)      # ['hours']
 
 print(rst)
+
