@@ -2,6 +2,27 @@
 
 import json
 
+class User:
+    def __init__(self,username,password,email):
+        self.username = username
+        self.password = password
+        self.email = email
+        
+
+
+    pass
+
+class UserRepository:
+    def register(self):
+        pass
+
+    def login(self):
+        pass
+
+    def saveToFile(self):
+        pass
+
+
 
 while True:
     print('Menu'.center(20,' '))
