@@ -20,6 +20,44 @@ dir_re = [
     'purge', 'search', 'split', 'sub', 'subn', 'template'
 ]
 
-rst = dir(re)
-print(rst) 
+
+
+
+###### re module
+
+strEx= 'Python Course: "Zero To Hero" Guidline With Profbey | 60+ hours'
+
+
+
+#* re.findall() method
+
+rst_find = re.findall('Python',strEx)
+rstLen = len(rst_find)
+print(f'finding rst: {rst_find}, len rst: {rstLen}\n')
+
+
+
+#* re.split 
+
+rst_split = re.split(' ', strEx)
+rst_split = re.split('o', strEx)
+
+
+
+#* re.sub()
+
+rst_subStr = re.sub(' ','-',strEx)      # Python-Course:-"Zero-To-Hero"-Guidline-With-Profbey-|-60+-hours
+rst_subStr = re.sub('/s','-',strEx)     # Python-Course:-"Zero-To-Hero"-Guidline-With-Profbey-|-60+-hours
+
+
+
+#* re.search()                          # match objesi olarak dondurdu. ilk buldugu karsilasmanin degerlerini yazdirdi.
+
+rst = re.search('Course',strEx)         # <re.Match object; span=(7, 13), match='Course'>
+
+#rst = rst.span()                       # buldugu degerin indeks numaralarini verdi => (7, 13)
+#rst = rst.start()                      # 7
+#rst = rst.end()                        # 13
+#rst = rst.group()                      # Course
+#rst = rst.string                       # Python Course: "Zero To Hero" Guidline With Profbey | 60+ hours
 
